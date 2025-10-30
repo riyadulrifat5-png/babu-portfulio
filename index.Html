@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - MD Rafiqul Islam Babu</title>
+<style>
+:root{
+  --pink:#e91e63;
+  --bg:#f8f8f8;
+  --card:#fff;
+  --muted:#d41313;
+  --maxw:1200px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:#111}
+.wrap{max-width:var(--maxw);margin:20px auto;padding:20px}
+header{display:flex;gap:16px;align-items:center}
+.profile{display:flex;gap:16px;align-items:center;background:var(--card);padding:14px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)}
+.avatar{width:120px;height:120px;border-radius:12px;overflow:hidden;border:3px solid #fff;cursor:pointer}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.info{flex:1}
+.name{font-size:24px;font-weight:900}
+.subname{color:var(--muted);margin-top:6px;font-weight:600}
+.contacts{margin-top:8px;color:var(--muted)}
+.tabs{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.tab{background:#fff;padding:10px 16px;border-radius:10px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,0.04);font-weight:800}
+.tab.active{border:2px solid var(--pink);color:var(--pink)}
+section{margin-top:20px;display:none}
+section.active{display:block}
+.category-title{font-size:26px;font-weight:900;color:var(--pink);margin-bottom:10px}
+.sub{margin-bottom:16px}
+.sub h4{font-size:25px;font: weight 800px;;color:hsla(241, 92%, 50%, 0.952);margin-bottom:6px; text-decoration: underline;}
+.thumbs{display:flex;flex-wrap:wrap;gap:8px}
+.thumbs img{width:84px;height:84px;border-radius:6px;object-fit:cover;border:2px solid var(--pink);cursor:pointer;transition:0.3s}
+.thumbs img:hover{transform:scale(1.05)}
+
+ /* Popup Styles */
+#popup{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);justify-content:center;align-items:center;z-index:9999}
+#popup img{max-width:90%;max-height:80%;border-radius:10px}
+#popup .close, #popup .prev, #popup .next{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:32px;font-weight:bold;padding:10px;cursor:pointer;user-select:none}
+#popup .close{top:10px;right:20px;transform:none;font-size:28px}
+#popup .prev{left:20px}
+#popup .next{right:20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="profile">
+    <div class="avatar">
+      <img src="IMG_২০২০০২১৫_১১৪২০২.jpg" alt="Profile Pic">
+    </div>
+    <div class="info">
+      <div class="name">MD Rafiqul Islam Babu</div>
+      <div class="subname">Facebook Ads • Google Ads</div>
+      <div class="contacts">Phone: 01908653567 • Email: digimaxly@gmail.com</div>
+    </div>
+  </div>
+</header>
+
+<div class="tabs">
+  <div class="tab active" data-tab="facebook">FACEBOOK ADS</div>
+  <div class="tab" data-tab="google">GOOGLE ADS</div>
+  <div class="tab" data-tab="youtube">YOUTUBE ADS</div>
+  <div class="tab" data-tab="graphic design">GRAPHIC DESIGN</div>
+  <div class="tab" data-tab="ui ux">UI UX</div>
+</div>
+
+<!-- FACEBOOK ADS -->
+<section id="facebook" class="active">
+  <div class="sub">
+    <h4>Engagement</h4>
+    <div class="thumbs">
+      <img src="WhatsApp Image 2025-10-29 at 1.59.33 AM.jpeg">
+      <img src="Screenshot (4).png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+    </div>
+  </div>
+  <div class="sub">
+    <h4>App Promotion</h4>
+    <div class="thumbs">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+    </div>
+  </div>
+    <div class="sub">
+    <h4>Brand Awareness</h4>
+    <div class="thumbs">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+    </div>
+  </div>
+    <div class="sub">
+    <h4>Leads</h4>
+    <div class="thumbs">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+    </div>
+  </div>
+    <div class="sub">
+    <h4>Traffic</h4>
+    <div class="thumbs">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+    </div>
+  </div>
+    <div class="sub">
+    <h4>Leads</h4>
+    <div class="thumbs">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+    </div>
+  </div>
+    <div class="sub">
+    <h4>Sales</h4>
+    <div class="thumbs">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+      <img src="yourimage3.png">
+    </div>
+  </div>
+  <!-- Repeat for Brand Awareness, Leads, Sales, Traffic -->
+</section>
+
+<!-- GOOGLE ADS -->
+<section id="google">
+  <div class="category-title">Google Ads</div>
+  <div class="sub">
+    <h4>Search</h4>
+    <div class="thumbs">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+    </div>
+  </div>
+  <div class="sub">
+    <h4>Display</h4>
+    <div class="thumbs">
+      <img src="yourimage1.png">
+      <img src="yourimage2.png">
+    </div>
+  </div>
+  <!-- Repeat Video, Performance Max, Remarketing -->
+</section>
+
+<!-- YOUTUBE ADS -->
+<section id="youtube">
+  <div class="category-title">YouTube Ads</div>
+  <!-- Subcategories -->
+  <div class="sub">
+    <h4>Skippable</h4>
+    <div class="thumbs">
+      <img src="youtube_skippable_1.png">
+      <!-- Add up to 25 images -->
+    </div>
+  </div>
+  <div class="sub">
+    <h4>Non-Skippable</h4>
+    <div class="thumbs">
+      <img src="youtube_nonskippable_1.png">
+    </div>
+  </div>
+  <!-- Discovery, Shorts, Bumper subcategories -->
+</section>
+
+
+
+<!-- GRAPHIC DESIGN -->
+<section id="graphic">
+  <div class="category-title">Graphic Design</div>
+  <div class="sub">
+    <h4>Logo</h4>
+    <div class="thumbs">
+      <img src="graphic_logo_1.png">
+    </div>
+  </div>
+  <div class="sub">
+    <h4>Banner</h4>
+    <div class="thumbs">
+      <img src="graphic_banner_1.png">
+    </div>
+  </div>
+  <div class="sub">
+    <h4>Thumbnail</h4>
+    <div class="thumbs">
+      <img src="graphic_thumbnail_1.png">
+    </div>
+  </div>
+  <div class="sub">
+    <h4>Flyer</h4>
+    <div class="thumbs">
+      <img src="graphic_flyer_1.png">
+    </div>
+  </div>
+  <div class="sub">
+    <h4>Business Card</h4>
+    <div class="thumbs">
+      <img src="graphic_card_1.png">
+    </div>
+  </div>
+</section>
+
+<!-- UI/UX -->
+<section id="uiux">
+  <div class="category-title">UI/UX</div>
+  <div class="sub">
+    <h4>App UI</h4>
+    <div class="thumbs">
+      <img src="ui_appui_1.png">
+    </div>
+  </div>
+  <div class="sub">
+    <h4>Website UI</h4>
+    <div class="thumbs">
+      <img src="ui_websiteui_1.png">
+    </div>
+  </div>
+  <div class="sub">
+    <h4>Dashboard UI</h4>
+    <div class="thumbs">
+      <img src="ui_dashboard_1.png">
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Popup -->
+<div id="popup">
+  <span class="close">&times;</span>
+  <span class="prev">&#10094;</span>
+  <img src="">
+  <span class="next">&#10095;</span>
+</div>
+
+<script>
+// Tabs
+const tabs=document.querySelectorAll('.tab');
+const sections=document.querySelectorAll('section');
+tabs.forEach(tab=>tab.addEventListener('click',()=>{
+  tabs.forEach(t=>t.classList.remove('active'));
+  tab.classList.add('active');
+  sections.forEach(s=>s.classList.remove('active'));
+  document.getElementById(tab.dataset.tab).classList.add('active');
+}));
+
+// Popup
+let popup=document.getElementById('popup');
+let popupImg=popup.querySelector('img');
+let imgs=document.querySelectorAll('.thumbs img');
+let currentIndex=0;
+
+imgs.forEach((img,i)=>{
+  img.addEventListener('click',()=>{
+    currentIndex=i;
+    popupImg.src=img.src;
+    popup.style.display='flex';
+  });
+});
+
+popup.querySelector('.close').addEventListener('click',()=>popup.style.display='none');
+popup.querySelector('.prev').addEventListener('click',()=>{
+  currentIndex=(currentIndex-1+imgs.length)%imgs.length;
+  popupImg.src=imgs[currentIndex].src;
+});
+popup.querySelector('.next').addEventListener('click',()=>{
+  currentIndex=(currentIndex+1)%imgs.length;
+  popupImg.src=imgs[currentIndex].src;
+});
+</script>
+</div>
+</body>
+</html>
